@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/signuppage.css">
+    <title>Treetop</title>
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="nav-bar">
+            <h1>Treetop</h1>
+        </div>
+        <div class="signup-container">
+            <h2>Sign up</h2>
+            <div>
+                <form action="/signup" method="POST">
+                    <div>
+                        <label for="email">Email</label>
+                        <div>
+                            <input type="email" id="email-signup" name="userdetails[email]">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="username">Username</label>
+                        <div>
+                            <input type="text" id="username" name="userdetails[username]">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="mobile">Mobile Number</label>
+                        <div>
+                            <input type="number" id="mobile" name="userdetails[mobile]">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="pass1">Password</label>
+                        <div>
+                            <input type="password" id="pass1" name="userdetails[password]">
+                        </div>
+                    </div>
+
+                    <div>
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="already-div">
+                <p class="already-text">Already have an account <a href="/login" class="login-link">Login</a></p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Treetop</p>
+            <div class="footer-links">
+                <a href="/about">About</a>
+                <a href="/privacy">Privacy</a>
+                <a href="/contactus">Contact us</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

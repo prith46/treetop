@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/resetpass.css">
+    <title>Treetop</title>
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="nav-bar">
+            <h1>Treetop</h1>
+        </div>
+        
+        <div class="reset-container">
+            <h2>Reset password</h2>
+            <form action="/resetpassword" method="POST">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="reset[email]" id="email">
+                </div>
+                <div>
+                    <label for="mobile">Mobile Number</label>
+                    <input type="number" name="reset[mobile]" id="mobile">
+                </div>
+                <div>
+                    <label for="password">New Password</label>
+                    <input type="password" name="reset[password]" id="password">
+                </div>
+                <div>
+                    <button>Reset</button>
+                </div>
+            </form>
+            <div class="last-div">
+            <p class="go-p">Go back to <a class="go-link" href="/login">Login</a></p>
+        </div>
+        </div>
+        <div class="footer">
+            <p>Treetop</p>
+            <div class="footer-links">
+                <a href="/about">About</a>
+                <a href="/privacy">Privacy</a>
+                <a href="/contactus">Contact us</a>
+            </div>
+        </div> 
+    </div>
+</body>
+
+</html>

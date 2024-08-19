@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/postpage.css">
+    <title>Treetop</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <h1>Treetop</h1>
+            </div>
+            <div class="nav-center">
+                <a class="home-link" href="/home">Home</a>
+                <a class="post-link" href="">New post</a>
+            </div>
+            <div class="nav-right">
+                <form action="/logout" method="POST">
+                    <button class="logout-button">Logout</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <div>
+            <form class="form-class" action="#" method="POST" enctype="multipart/form-data">
+                <div class="file-input">
+                    <label for="image">Choose the image</label>
+                    
+                </div>
+                <input type="file" name="image" id="posting[post]">
+                <div class="caption">
+                    <label for="caption">Caption</label>
+                    
+                </div>
+                <input type="text" name="caption" id="posting[caption]">
+                <button>Post</button>
+            </form>
+        </div>
+        <footer>
+            <div class="footer">
+                <p>Treetop</p>
+                <div class="footer-links">
+                    <a href="/about">About</a>
+                    <a href="/privacy">Privacy</a>
+                    <a href="/contactus">Contact us</a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
