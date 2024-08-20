@@ -5,28 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/loginpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Treetop</title>
 </head>
 
 <body>
     <div class="background-container">
-        <div class="navbar">
-            <h1 class="h11">Treetop</h1>
-        </div>
+        <nav class="nav-bar">
+            <div>
+                <h1>Treetop</h1>
+            </div>
+        </nav>
         <div class="login-container">
             <h2>Welcome back</h2>
             <form action="/login" method="POST">
                 <div>
                     <label for="email">Email</label>
                     <div>
-                    <input type="email" id="email" name="userdetailslogin[email]">
-                </div>
+                        <input type="email" id="email" name="userdetailslogin[email]">
+                    </div>
                 </div>
                 <div>
                     <label for="password">Password</label>
                     <div>
-                    <input type="password" id="password" name="userdetailslogin[password]">
-                </div>
+                        <input type="password" id="password" name="userdetailslogin[password]">
+                    </div>
                 </div>
                 <div>
                     <button>Login</button>
@@ -35,14 +41,16 @@
                 <p class="account">Don't have an account <a href="/signup" class="register"> Register</a></p>
             </form>
         </div>
-        <div class="footer">
-            <p>Treetop</p>
-            <div class="footer-links">
-                <a href="/about">About</a>
-                <a href="/privacy">Privacy</a>
-                <a href="/contactus">Contact us</a>
+        <footer>
+            <div class="footer">
+                <p>Treetop</p>
+                <div class="footer-links">
+                    <a href="/about">About</a>
+                    <a href="/privacy">Privacy</a>
+                    <a href="/contactus">Contact us</a>
+                </div>
             </div>
-        </div>
+        </footer>
     </div>
 </body>
 

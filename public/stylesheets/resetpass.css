@@ -1,15 +1,15 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .background-container {
-    background: url('signupimage.jpg');
-    background-size: cover;
+    background: url('resetimage.jpg') no-repeat;
+    background-size: contain;
     position: relative;
     height: 100vh;
     display: flex;
@@ -18,13 +18,15 @@ body, html {
 }
 
 .reset-container {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     width: 350px;
     height: 410px;
     padding: 30px;
     border-radius: 10px;
     margin: auto;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: 15%;
 }
 
 .reset-container form {
@@ -33,11 +35,18 @@ body, html {
 }
 
 .nav-bar {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: black;
     color: white;
-    padding-left: 30px;
+    padding: 2px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.nav-left h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 .reset-container h2 {
     text-align: center;
     margin-top: 10px;

@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - TreeTop</title>
     <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="page-container">
         <header>
-            <h1>Contact Us</h1>
+            <nav class="nav-bar">
+                <div>
+                    <h1>Treetop</h1>
+                </div>
+            </nav>
+            <h1 class="aboutcontact">Contact Us</h1>
         </header>
         <main>
             <section class="content-section">
-                <p>If you have any questions, suggestions, or concerns, feel free to reach out to us. We are here to help!</p>
+                <p>If you have any questions, suggestions, or concerns, feel free to reach out to us. We are here to
+                    help!</p>
                 <form action="#">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <button type="submit">Send Message</button>
+                    <div class="contact-form">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="contact-form">
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="contact-form">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="contact-form">
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="contact-form">
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="contact-form">
+                        <input type="text" id="message" name="message" required>
+                    </div>
+                    <div class="contact-form">
+                        <button type="submit">Send Message</button>
+                    </div>
                 </form>
             </section>
         </main>
         <footer>
-            <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="privacy.html">Privacy Policy</a></p>
+            <div class="footer">
+                <p>Treetop</p>
+                <div class="footer-links">
+                    <a href="/about">About</a>
+                    <a href="/privacy">Privacy</a>
+                    <a href="/contactus">Contact us</a>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
+
 </html>

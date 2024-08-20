@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Treetop</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
     <header>
         <nav class="nav-bar">
@@ -27,18 +33,24 @@
     <main>
         <ul class="post-list">
             <% for(let post of allPost) { %>
-            <li class="post-item">
-                <h3><%= post.username %></h3>
-                <img src="<%= post.post %>" alt="Post image" class="post-image">
-                <p><%= post.caption %></p>
-                <div class="like-buttons">
-                    <button type="button" class="like-button" data-id="<%= post._id %>">
-                        Likes - <span id="like-count-<%= post._id %>"><%= post.likes || 0 %></span>
-                    </button>
-                </div>
-                
-            </li>
-            <% } %>
+                <li class="post-item">
+                    <h3>
+                        <%= post.username %>
+                    </h3>
+                    <img src="<%= post.post %>" alt="Post image" class="post-image">
+                    <p>
+                        <%= post.caption %>
+                    </p>
+                    <div class="like-buttons">
+                        <button type="button" class="like-button" data-id="<%= post._id %>">
+                            Likes - <span id="like-count-<%= post._id %>">
+                                <%= post.likes || 0 %>
+                            </span>
+                        </button>
+                    </div>
+
+                </li>
+                <% } %>
         </ul>
     </main>
     <footer>
@@ -53,14 +65,15 @@
     </footer>
 
     <script>
-        $(document).ready(function() {
-            $('.like-button').click(function() {
+        $(document).ready(function () {
+            $('.like-button').click(function () {
                 const postId = $(this).data('id');
-                $.post(`/like/${postId}`, function(data) {
+                $.post(`/like/${postId}`, function (data) {
                     $(`#like-count-${postId}`).text(data.likes);
                 });
             });
         });
     </script>
 </body>
+
 </html>
