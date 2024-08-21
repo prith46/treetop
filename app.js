@@ -195,7 +195,11 @@ app.get('/privacy', (req, res) => {
 
 app.get('/contactus', (req, res) => {
     res.render('contactus');
-})
+});
+
+app.get('/', (req, res) => {
+    res.redirect('/login');
+});
 
 const port = process.env.PORT || 8080;
 
