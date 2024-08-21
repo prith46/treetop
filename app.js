@@ -68,6 +68,10 @@ const requireLogin = (req, res, next) => {
     next();
 }
 
+app.get('/', (req, res) => {
+    res.redirect('/login');
+});
+
 app.get('/login', (req, res) => {
     res.render('loginpage');
     console.log("login page");
@@ -195,10 +199,6 @@ app.get('/privacy', (req, res) => {
 
 app.get('/contactus', (req, res) => {
     res.render('contactus');
-});
-
-app.get('/', (req, res) => {
-    res.redirect('/login');
 });
 
 const port = process.env.PORT || 8080;
